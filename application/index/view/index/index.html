@@ -1,0 +1,19 @@
+
+<h1>{$name}</h1>
+
+<ul>
+	<li>{$userInfo.username}</li>
+	<li>{$userInfo.password}</li>
+	<li>{$userInfo.create_time}</li>
+	<li>{$userInfo.update_time}</li>
+	<li>{$userInfo->profile->age}</li>
+</ul>
+<h1>{$Think.server.remote_addr}</h1>
+<h1>{$Request.get.id}</h1>
+<h1>{$username|default="这家伙很懒，什么也没留下"}</h1>
+
+{literal}
+Hello,{$name}！
+{/literal}
+
+{/* 注释内容 */ } 或 {// 注释内容 }

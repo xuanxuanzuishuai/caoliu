@@ -1,0 +1,7 @@
+{layout name="layout_xx"  /}
+
+<form action="/index/index/doLogin" method="post">
+	<input type="text" name="username" placeholder="请输入用户名" />
+	<input type="hidden" name="__token__" value="{$Request.token}" />
+	<input type="submit" name="提交">
+</form>
